@@ -1,0 +1,23 @@
+<html ng-app="app" xmlns="http://www.w3.org/1999/xhtml">
+<head >
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="backlink.css" />
+    <script src="lib/jquery_1_11_1.js"></script>
+     <script type="text/javascript" src="angular/angular.min.js"></script>
+    <script type="text/javascript" src="angular/angular-route.min.js"></script>  
+    <script type="text/javascript" src="angular/angular-sanitize.min.js"></script>
+
+   
+</head>
+<body>	
+	<script type="text/javascript" src="app.js"></script>
+	 <script type="text/javascript" src="backlinkDirectives.js"></script>
+    <script type="text/javascript" src="backlinkController.js"></script>
+    <div ng-controller="tableCtrl">
+		<h1>Limra BackLink</h1>
+	    <vmf-table title="Table" options="config" name="Table" model="data">    
+	    </vmf-table> 
+		current: {{data}}
+	</div>
+</body>
+</html>
